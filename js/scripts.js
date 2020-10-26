@@ -10,11 +10,13 @@ $(document).ready(function() {
     modifiedArray.push(array[1]);
     modifiedArray.push(array[0]);
     modifiedArray.push(array[2]);
-    alert(modifiedArray);
-
+   
     event.preventDefault();
+
+    $("#season").append(modifiedArray[0]);
+    $("#animal").append(modifiedArray[1]);
+    $("#food").append(modifiedArray[2]);
+
+    $("#list").show();
   });
 });
-
-/* let modifiedArray = array[1]
-modifiedArray.push(array.slice(0,3)); */
